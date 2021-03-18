@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wear for Weather</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
+    <!-- OPTIONAL -->
+        <!-- Background is different based on current weather -->
+</head>
+<body>
+    <div class="container">
+        <div class="gallery">
+            <div class="header gallery_item-1">Get The Weather</div>
+            <div class="gallery_item-2">
+                <form>
+                    <input type="text" placeholder="City..." name="inputBox" id="searchCity"> &nbsp; &nbsp;
+                    <input type="text" placeholder='State...' name="inputBox" id="searchState">
+                    <br>
+                    <p>*State search only applicable in the United States</p>
+                </form>
+            </div>
+            <div class="gallery_item-3">
+                <input type="button" name="button" id="getWeather" value="Get Weather" onclick="getWeather(); getForecast();">                
+            </div>
+            <div class="gallery-item-4">
+                <!-- Big letters. Don't be afraid to fill the page -->
+                <p id="currTemp"></p>
+            </div>
+            <div class="gallery-item-5">
+                <p id="highLow"></p>
+            </div>
+            <div class="gallery-item-6">
+                <p id="wind"></p>
+            </div>
+            <div class="gallery-item-7">
+                <p id="feelsLike"></p>
+            </div>
+            <div class="gallery-item-8">
+                <p id="humidity"></p>
+            </div>
+            <div id="forecastMain" class="gallery-item-9">
+                    <div id="forecastHeader">
+                        <h3></h3>
+                    </div>
+            <div class="gallery-item-10" id="forecast1">
+                <p class="fcTime"></p>
+                <p class="fcTemp"></p>
+                <p class="fcDay"></p>
+            </div>
+            <div class="gallery-item-11" id="forecast2">
+                <p class="fcTime"></p>
+                <p class="fcTemp"></p>
+                <p class="fcDay"></p>
+            </div>
+            <div id="forecast3">
+                <div class="fcTime"></div>
+                <div class="fcTemp"></div>
+                <div class="fcDay"></div>
+            </div>
+            <div id="forecast4">
+                <div class="fcTime"></div>
+                <div class="fcTemp"></div>
+                <div class="fcDay"></div>
+            </div>
+            <div id="forecast5">
+                <div class="fcTime"></div>
+                <div class="fcTemp"></div>
+                <div class="fcDay"></div>
+            </div>
+            <div id="forecast6">
+                <div class="fcTime"></div>
+                <div class="fcTemp"></div>
+                <div class="fcDay"></div>
+            </div>
+            <div id="forecast7">
+                <div class="fcTime"></div>
+                <div class="fcTemp"></div>
+                <div class="fcDay"></div>
+            </div>
+                
+            </div>
+            <!-- Left justified title above horizontal forecast -->
+                <!-- by hour, temp every hour, chance of rain/chance of 
+                    snow (conditional on projected temp for that hour) -->
+            <!-- Below are optional once other features work -->
+                <!-- Symbol above current temp showing sunny/partially cloudy/cloudy/raining/
+                snowing -->
+        </div>        
+    </div>
+    
+</body>
+</html>
+
+<!-- Accessibility TODOS -->
+    <!-- Alt text for images -->
+    <!-- Use strong contrast for background and text, buttons, etc. -->
+    <!-- Don't use "Read More" or "Click Here"! -->
+    <!-- Make HTML file names highly readable -->
+    <!-- Font -->
+        <!-- Use regular/thick font -->
+        <!-- Adjustable font sizes & button text sizes -->
+    <!-- Include some basic ARIA - don't get carried away, just test it out -->
+    

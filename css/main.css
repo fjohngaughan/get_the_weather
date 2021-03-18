@@ -1,0 +1,140 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body{
+    background-image: url("/images/blue_sky.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: whitesmoke;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+input{
+    border-radius: 7px;
+    border-style: none;
+    font-size: 2rem;
+    height: 5rem;
+    padding-left: 1rem;
+    box-shadow: none;
+    width: 22rem;
+}
+
+::placeholder{
+    color: black;
+    opacity: 1;
+}
+
+
+.container{
+    font-size: 1.8rem;
+    margin: auto;
+    margin-top: 12rem;
+    width: 80%;
+}
+
+.header{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(14, 4vw);
+    gap: 2rem;
+}
+
+.gallery_item-1{
+    grid-column-start: 1;
+    grid-column-end: 15;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.gallery_item-2{
+    grid-column-start: 1;
+    grid-column-end: 15;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: center;
+}
+
+.gallery_item-3{
+    grid-column-start: 1;
+    grid-column-end: 15;
+    grid-row-start: 5;
+    grid-row-end: 5;
+    text-align: center;
+}
+
+#getWeather{
+    background-color:rgb(236, 235, 235); 
+    border:2px solid black;
+    font-size: 1.6rem;
+}
+
+.gallery-item-4{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+.gallery-item-5{
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+.gallery-item-6{
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+.gallery-item-7{
+    grid-column-start: 9;
+    grid-column-end: 11;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+.gallery-item-8{
+    grid-column-start: 11;
+    grid-column-end: 13;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+
+.gallery-item-9{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 8;
+    grid-row-end: 10;
+}
+
+.gallery-item-10{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 10;
+    grid-row-end: 11;
+}
+
+.gallery-item-11{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 10;
+    grid-row-end: 11;
+}
